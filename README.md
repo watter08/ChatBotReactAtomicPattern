@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# 🧠 Chatbot FAQ Inteligente con React + Ullama AI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto fue iniciado con [Create React App](https://github.com/facebook/create-react-app) y tiene como objetivo principal crear un **chatbot inteligente** capaz de responder preguntas frecuentes no solo con respuestas predefinidas, sino también analizando datos provenientes de una base de datos mediante la integración con **Ullama AI**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Características
+
+- Interfaz construida en **React**.
+- Chatbot de **preguntas frecuentes** (FAQ) con UI moderna.
+- Conexión a una **base de datos dinámica** para almacenar información y preguntas/respuestas.
+- Integración con **IA de Ullama** para procesar y analizar el contenido de la base de datos y generar respuestas inteligentes en tiempo real.
+- Capacidad de aprendizaje y adaptación según el contenido actualizado.
+
+---
+
+## 🛠️ Scripts disponibles
+
+En el directorio del proyecto, puedes ejecutar:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Ejecuta la app en modo desarrollo.  
+Abre [http://localhost:3000](http://localhost:3000) para verla en tu navegador.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Lanza el ejecutor de pruebas en modo interactivo.  
+Consulta más en la [documentación de pruebas](https://facebook.github.io/create-react-app/docs/running-tests).
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Compila la app para producción en la carpeta `build`.  
+Optimiza React automáticamente para el mejor rendimiento.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+⚠️ Este comando es irreversible.  
+Copia todas las configuraciones y dependencias para personalización avanzada.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🧩 Tecnologías Utilizadas
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **ReactJS** – para construir la interfaz de usuario.
+- **Ullama AI** – para procesar y responder consultas de forma inteligente.
+- **Base de datos** (MySQL, MongoDB o la que definas) – para almacenar y recuperar contenido de FAQ.
+- **Node.js / Express** (opcional) – para manejar la API backend (si aplica).
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🧠 Cómo funciona la IA
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+La IA de Ullama se encarga de:
 
-### Code Splitting
+- Leer el contenido de la base de datos.
+- Analizar la información en lenguaje natural.
+- Generar respuestas adaptativas, no limitadas a opciones preconfiguradas.
+- Aprender de nuevas preguntas y enriquecer sus respuestas.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📦 Despliegue
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Consulta la [guía de despliegue](https://facebook.github.io/create-react-app/docs/deployment) para opciones como Vercel, Netlify o GitHub Pages.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📚 Aprende más
 
-### Advanced Configuration
+- [Documentación de Create React App](https://facebook.github.io/create-react-app/docs/getting-started)
+- [Documentación de React](https://reactjs.org/)
+- [Ullama AI](https://ullama.com) *(o reemplaza este link por el correcto si tienes la doc técnica específica)*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## ✨ Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Desarrollado con ❤️ por watter08
