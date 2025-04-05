@@ -1,35 +1,36 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import InputField from '../atoms/InputField';
 import Button from '../atoms/Button';
 import ChatMessage from '../molecules/ChatMessage';
+import { faqs } from '../../libs/constants/faqs'; // Importamos el archivo de preguntas frecuentes
 
-const ChatBox = ({ userId }) => {
+const ChatBox = () => {
   const [prompt, setPrompt] = useState('');
   const [messages, setMessages] = useState([]);
 
   const sendMessage = async () => {
     if (!prompt.trim()) return;
-    const res = await axios.post('https://tudominio/api/chat', { prompt, userId });
-    setMessages([...messages, { prompt, response: res.data.response }]);
+    const faq = faqs.find((item) =>
+      item.question.toLowerCase().includes(prompt.toLowerCase())
+    );
+
+    let response = "Lo siento, no tengo una respuesta para esa pregunta.";
+
+    if (faq) {
+      response = faq.answer;
+    }
+
+    setMessages([
+      ...messages,
+      { prompt, response }
+    ]);
     setPrompt('');
   };
 
-  useEffect(() => {
-    const fetchHistory = async () => {
-      try{
-        const res = await axios.get(`https://tudominio/api/chat/history?user=${userId}`);
-      setMessages(res.data);
-      }catch(error){
-        console.log(error.message)
-      }
-    };
-    fetchHistory();
-  }, [userId]);
 
   return (
     <div>
-      <div style={{ maxHeight: '60vh', overflowY: 'auto' }}>
+      <div className='message-container'>
         {messages.map((msg, i) => (
           <ChatMessage key={i} prompt={msg.prompt} response={msg.response} />
         ))}

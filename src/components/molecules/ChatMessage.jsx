@@ -1,7 +1,7 @@
 const ChatMessage = ({ prompt, response }) => (
-    <div style={{ marginBottom: 20 }}>
-      <p><strong>Tú:</strong> {prompt}</p>
-      <p><strong>Bot:</strong> {response}</p>
+    <div className="question-container">
+      <p className="question"><strong>Tú:</strong> {prompt}</p>
+      <p className="anwser"><strong>Bot:</strong> {response}</p>
     </div>
   );
   
